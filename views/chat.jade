@@ -1,0 +1,15 @@
+extends layout
+block content
+  h1 Chat
+  div#caja1
+    form#form_nick(action="javascript:void(0);")
+      input#nick(type="text", size="50")
+      input(type="submit", value="Ingresar nick")
+    div#mensajes
+    form#form_mensaje(action="javascript:void(0);")
+      input#mensaje(type="text", size="50")
+      input(type="submit", value="Enviar mensaje")
+  div#caja2
+    h2 Conectados
+    ul#usuarios
+  script(type="text/javascript", src="/javascripts/chat_cliente.js")
